@@ -1,23 +1,23 @@
-export function getTitle(elem) {
-  const element = document.querySelector(elem);
+export function getTitle() {
+  const element = document.querySelector(".title");
 
   return element.textContent;
 }
 
-export function getDescription(elem) {
-  const element = document.querySelector(elem);
+export function getDescription() {
+  const element = document.querySelector(".about");
 
   return element.innerText;
 }
 
-export function getPlans(elem) {
-  const element = document.querySelector(elem);
+export function getPlans() {
+  const element = document.querySelector("plans");
 
   return element.innerHTML;
 }
 
-export function getGoal(elem) {
-  const element = document.querySelector(elem);
+export function getGoal() {
+  const element = document.querySelector(".goal");
 
   return element.outerHTML;
 }
