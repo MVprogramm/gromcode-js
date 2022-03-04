@@ -11,7 +11,7 @@ export function getDescription() {
 }
 
 export function getPlans() {
-  const element = document.querySelector("plans");
+  const element = document.querySelector(".plans");
 
   return element.innerHTML;
 }
