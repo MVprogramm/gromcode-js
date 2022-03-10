@@ -22,7 +22,7 @@ const sectorElem = sectors
 arena.innerHTML = sectorElem;
 
 const checkArena = (event) => {
-  result = `S ${event.target.dataset.seat} - ` + result;
+  result += `S ${event.target.dataset.seat}`;
 
   board.textContent = result;
 };
@@ -38,7 +38,7 @@ for (let ln of line) {
 
 const sector = document.querySelectorAll(".sector");
 const checkSector = (event) => {
-  result += `S ${event.currentTarget.dataset.sector}`;
+  result = `S ${event.currentTarget.dataset.sector} - ` + result;
 };
 for (let sect of sector) {
   sect.addEventListener("click", checkSector);
